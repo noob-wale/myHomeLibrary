@@ -3,34 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="app.js" defer></script>
     <title>MyHomeLibrary</title>
   </head>
   <body>
-    <h1>Book Library App</h1>
+    <header class="app-header">
+      <a href="#"
+        ><img
+          src="assets/Black and White Minimal Monogram Logo.png"
+          alt="mylogo"
+          height="70px"
+          width="70px"
+      /></a>
+      <a href="#"><i id="navicon" class="fa-solid fa-bars fa-3x"></i></a>
+    </header>
 
-    <div id="book-library">
-      <h2>Book Library</h2>
-      <ul id="book-list">
-        <!-- Book items will be dynamically added here -->
-      </ul>
-    </div>
+    <main>
+        <h2>My Books</h2>
+      <div id="book-library" class="booklibrary">
+        <!-- <ul id="book-list">
+              Book items will be dynamically added here
+            </ul> -->
+        <div class="book">
+          <div class="bookimage">
+            <img
+              src="assets/bigdata.jpeg"
+              alt="bigdata"
+              height="200px"
+              width="150px"
+            />
+          </div>
+          <div class="book-details">
+            <h4>Title:</h4>
+            <h4>Author:</h4>
+            <h4>Genre:</h4>
+          </div>
+        </div>
+        <div class="book">
+          <div class="bookimage">
+            <img
+              src="assets/bigdata.jpeg"
+              alt="bigdata"
+              height="200px"
+              width="150px"
+            />
+          </div>
+          <div class="book-details">
+            <h4>Title:</h4>
+            <h4>Author:</h4>
+            <h4>Genre:</h4>
+          </div>
+        </div>
+        <div class="book">
+          <div class="bookimage">
+            <img
+              src="assets/bigdata.jpeg"
+              alt="bigdata"
+              height="200px"
+              width="150px"
+            />
+          </div>
+          <div class="book-details">
+            <h4>Title:</h4>
+            <h4>Author:</h4>
+            <h4>Genre:</h4>
+          </div>
+        </div>
+        <div class="book">
+            <div class="bookimage">
+              <img
+                src="assets/bigdata.jpeg"
+                alt="bigdata"
+                height="200px"
+                width="150px"
+              />
+            </div>
+            <div class="book-details">
+              <h4>Title:</h4>
+              <h4>Author:</h4>
+              <h4>Genre:</h4>
+            </div>
+          </div>
+          <div class="book">
+            <div class="bookimage">
+              <img
+                src="assets/bigdata.jpeg"
+                alt="bigdata"
+                height="200px"
+                width="150px"
+              />
+            </div>
+            <div class="book-details">
+              <h4>Title:</h4>
+              <h4>Author:</h4>
+              <h4>Genre:</h4>
+            </div>
+          </div>
+          <div class="book">
+            <div class="bookimage">
+              <img
+                src="assets/bigdata.jpeg"
+                alt="bigdata"
+                height="200px"
+                width="150px"
+              />
+            </div>
+            <div class="book-details">
+              <h4>Title:</h4>
+              <h4>Author:</h4>
+              <h4>Genre:</h4>
+            </div>
+          </div>
+      </div>
+      <!-- 
+      <div id="user-library">
+        <h2>User Library</h2>
+        <ul id="user-list">
+        </ul>
+      </div> -->
+    </main>
 
-    <div id="user-library">
-      <h2>User Library</h2>
-      <ul id="user-list">
-        <!-- User items will be dynamically added here -->
-      </ul>
-    </div>
-
-    <div id="actions">
-      <h2>Actions</h2>
-      <button onclick="addBook()">Add Book</button>
-      <button onclick="removeBook()">Remove Book</button>
-      <button onclick="addUser()">Add User</button>
-      <button onclick="removeUser()">Remove User</button>
-      <button onclick="assignBook()">Assign Book to User</button>
-      <button onclick="returnBook()">Return Book from User</button>
-    </div>
+    <footer id="actions">
+      <button onclick="addBook()" class="my-btn">Add Book</button>
+      <!-- <button onclick="removeBook()">Remove Book</button> -->
+      <button onclick="addUser()" class="my-btn">Add User</button>
+      <!-- <button onclick="removeUser()">Remove User</button> -->
+      <button onclick="assignBook()" class="my-btn">Assign Book</button>
+      <button onclick="returnBook()" class="my-btn">Return Book</button>
+    </footer>
   </body>
 </html>
