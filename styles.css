@@ -39,6 +39,11 @@
     button {
         flex-grow: 1;
     }
+
+    form {
+        max-width: 100%; /* Remove the max-width restriction for smaller screens */
+        margin: auto 0;
+      }
 }
 
 /*media query for screens between 768px and 1023px */
