@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
+    <title>MyHomeLibrary</title>
+  </head>
+  <body>
+    <h1>Book Library App</h1>
+
+    <div id="book-library">
+      <h2>Book Library</h2>
+      <ul id="book-list">
+        <!-- Book items will be dynamically added here -->
+      </ul>
+    </div>
+
+    <div id="user-library">
+      <h2>User Library</h2>
+      <ul id="user-list">
+        <!-- User items will be dynamically added here -->
+      </ul>
+    </div>
+
+    <div id="actions">
+      <h2>Actions</h2>
+      <button onclick="addBook()">Add Book</button>
+      <button onclick="removeBook()">Remove Book</button>
+      <button onclick="addUser()">Add User</button>
+      <button onclick="removeUser()">Remove User</button>
+      <button onclick="assignBook()">Assign Book to User</button>
+      <button onclick="returnBook()">Return Book from User</button>
+    </div>
+  </body>
+</html>
