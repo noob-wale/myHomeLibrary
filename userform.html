@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userform.css">
+    <title>Add User</title>
+</head>
+<body>
+    <form action="submit" method="POST" enctype="multipart/form-data">
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" name="user-name" required>
+      
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="user-email" required>
+      
+        <label for="user-phone">Phone Number:</label>
+        <div class="phone-input">
+          <select id="country-code" name="country-code" required>
+            <option value="+1">+1</option>
+            <option value="+254">+254</option>
+            <!-- Add more country code options here -->
+          </select>
+          <input type="text" id="user-phone" name="user-phone" required>
+        </div>
+      
+        <label for="user-image">Profile Image:</label>
+        <input type="file" id="user-image" name="user-image" accept="image/*" required>
+      
+        <input type="submit" value="Add User">
+      </form>
+      <a href="index.html"><button onclick="" class="my-btn">Back</button></a>
+
+      
+</body>
+</html>
